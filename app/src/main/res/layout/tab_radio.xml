@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/audio_streams_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playback_control_layout"
+        android:orientation="vertical">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_view_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="110dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"></GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playback_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/radioChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="0.8"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/audioStopBtn"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/stopcontrol"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/audioStreamBtn"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/playcontrol"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+</RelativeLayout>

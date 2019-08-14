@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Streaming-Player</string>
+    <string name="settings">Einstellungen</string>
+    <string name="domain">Domain:</string>
+    <string name="benutzer">Benutzername:</string>
+    <string name="passwort">Passwort:</string>
+    <string name="port">Port:</string>
+    <string name="speichern">Speichern</string>
+    <string name="about">Über</string>
+</resources>
